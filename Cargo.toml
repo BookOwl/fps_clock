@@ -6,5 +6,7 @@ description = "A crate for making your game loop run at the correct FPS"
 readme = "README.md"
 keywords = ["fps", "frames per second", "game", "clock"]
 license = "Apache-2.0/MIT"
+documentation = "https://docs.rs/fps_clock"
+repository = "https://github.com/BookOwl/fps_clock"
 
 [dependencies]
