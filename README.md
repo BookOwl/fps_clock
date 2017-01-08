@@ -1,5 +1,5 @@
 # fps_clock
-[![https://docs.rs/fps_clock/](https://docs.rs/fps_clock/badge.svg)](https://docs.rs/ffps_clock)
+[![https://docs.rs/fps_clock/](https://docs.rs/fps_clock/badge.svg)](https://docs.rs/fps_clock)
 
 A simple crate to control the FPS of your game loops in Rust.
 
