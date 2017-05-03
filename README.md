@@ -10,7 +10,7 @@ used by adding `fps_clock` to the dependencies in your project's `Cargo.toml`.
 
 ```toml
 [dependencies]
-fps_clock = "0.1"
+fps_clock = "1.0"
 ```
 
 and this to your crate root:
