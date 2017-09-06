@@ -2,12 +2,11 @@ extern crate fps_clock;
 use fps_clock::*;
 use std::io::Write;
 fn main() {
-    let mut i = 0;
+    let mut i = 0.0;
     let mut clock = FpsClock::new(30);
     loop {
-        i += 1;
-        print!("\r{:?}", i);
+        print!("\rTime since last tick (in nanosecs): {:?}", i);
         std::io::stdout().flush().unwrap();
-        clock.tick();
+        i = clock.tick();
     }
 }
