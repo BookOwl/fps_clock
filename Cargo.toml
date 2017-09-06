@@ -1,6 +1,6 @@
 [package]
 name = "fps_clock"
-version = "1.0.0"
+version = "2.0.0"
 authors = ["BookOwl <stanleybookowl@gmail.com>"]
 description = "A crate for making your game loop run at the correct FPS"
 readme = "README.md"

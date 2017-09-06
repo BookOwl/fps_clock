@@ -15,7 +15,7 @@
 //!
 //! ```toml
 //! [dependencies]
-//! fps_clock = "0.1"
+//! fps_clock = "2.0"
 //! ```
 //!
 //! and this to your crate root:

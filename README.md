@@ -10,7 +10,7 @@ used by adding `fps_clock` to the dependencies in your project's `Cargo.toml`.
 
 ```toml
 [dependencies]
-fps_clock = "1.0"
+fps_clock = "1.1"
 ```
 
 and this to your crate root:
@@ -41,3 +41,10 @@ fn main() {
 # License
 
 This crate is licensed under either the MIT or the Apache 2.0 license, depending on what you want. See LICENSE.MIT and LICENSE.APACHE for details.
+
+# Changelog
+## v2.0.0
+Made `FpsClock::tick()` return the time in nanoseconds since the last time it was called instead of `()`
+
+## v1.0.0
+First release.
