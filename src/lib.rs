@@ -35,9 +35,10 @@
 //! fn main() {
 //!     // Set up your game here
 //!     let mut fps = fps_clock::FpsClock::new(30);
+//!     let mut nanosecs_since_last_tick = 0.0;
 //!     loop {
 //!         // Complicated game loop stuff here
-//!         fps.tick();
+//!         nanosecs_since_last_tick = fps.tick();
 //!     }
 //! }
 //! ```
@@ -68,7 +69,8 @@ impl FpsClock {
     pub fn fps(&self) -> u32 {
         self.fps
     }
-    /// Makes the game loop slow down to run at the correct FPS
+    /// Makes the game loop slow down to run at the correct FPS.
+    /// Returns the time in nanoseconds since the last time tick() was called.
     pub fn tick(&mut self) -> f32 {
         let t = self.last_tick_time.elapsed();
         let total_nanos = t.as_secs() * 1_000_000_000 + t.subsec_nanos() as u64;
