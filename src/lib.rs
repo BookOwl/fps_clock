@@ -69,7 +69,7 @@ impl FpsClock {
         self.fps
     }
     /// Makes the game loop slow down to run at the correct FPS
-    pub fn tick(&mut self) {
+    pub fn tick(&mut self) -> f32 {
         let t = self.last_tick_time.elapsed();
         let total_nanos = t.as_secs() * 1_000_000_000 + t.subsec_nanos() as u64;
         let diff = self.fps_in_nanos - (total_nanos as f32);
@@ -77,5 +77,6 @@ impl FpsClock {
             thread::sleep(time::Duration::new(0, diff as u32))
         };
         self.last_tick_time = time::Instant::now();
+        diff
     }
 }
